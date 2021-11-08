@@ -44,12 +44,14 @@
       </feature>
     </config-file>
 
+   <preference name="MICROPHONE_USAGE_DESCRIPTION" default="" />
     <config-file target="*-Info.plist" parent="NSMicrophoneUsageDescription">
-      <string>Request to use Microphone</string>
+      <string>$MICROPHONE_USAGE_DESCRIPTION</string>
     </config-file>
 
+    <preference name="SPEECH_USAGE_DESCRIPTION" default="" />
     <config-file target="*-Info.plist" parent="NSSpeechRecognitionUsageDescription">
-      <string>Request to use Speech Recognition</string>
+      <string>$SPEECH_USAGE_DESCRIPTION</string>
     </config-file>
 
     <header-file src="src/ios/SpeechRecognition.h"/>
